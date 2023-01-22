@@ -45,7 +45,7 @@ main  {
     background-position: center ;
 }
 
-h1 {
+h2 {
     z-index: 100;
     text-align: center;
     width: 100%;
@@ -62,7 +62,7 @@ h2 {
     font-size: 2em;
 }
 
-h1+p, h1+p+p{
+h2+p, h2+p+p{
     font-family: OpenSans_regular, Helvetica, sans-serif;
     color: white;
     font-size: 1em;
@@ -160,12 +160,13 @@ header section {
     /* 47vh omdat het anders onder de rand komt */
 }
 
-header h3 {
+section > h1 {
     font-family: DOS04_bold, Helvetica, sans-serif;
     font-size: 4em;
     padding-top: 10%;
     margin: 0;
     text-align: right;
+    color: black;
 }
 
     /* contact items */
@@ -220,6 +221,7 @@ main section {
     margin-top: 15%;
     text-align: center;
 }
+
     /* video */
 
     @media screen and (max-width: 500px) {
@@ -290,18 +292,19 @@ main ol li p {
 
 
 /* MAIN - EVENTS */
-article {
+figure {
     min-width: 100px;
     text-align: center;
 }
-article img {
+
+figure img {
     width: 600px;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5%;
 }
 
-article p {
+figure p {
 font-family: OpenSans_regular, Helvetica, sans-serif;
 color: white;
 text-align: center;
@@ -310,7 +313,7 @@ margin-top: 3vh;
 min-width: 100%;
 }
     /* button */
-article a {
+figure a {
     font-family: nunito_regular, Helvetica, sans-serif, Helvetica, sans-serif;
     font-size: 2.5em;
     background-color: white;
@@ -320,26 +323,26 @@ article a {
     transition: 0.3s;
 }
 
-article a:hover {
+figure a:hover {
     transition: .2s ease;
     font-size: 2.8em;
 }
 
 @media screen and (max-width: 500px) {
-    article {
+    figure {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 5vw;
     }
     
-    article img {
+    figure img {
         width: 90vw;
         margin: 0;
         text-align: center;
     }
 
-    article a {
+    figure a {
         font-size: 2em;
     }
 }
